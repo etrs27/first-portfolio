@@ -1,0 +1,68 @@
+h1 {
+  color: #F38D68;
+  text-align: center;
+  height: 40px;
+  background-image: url("images/calculating-numbers-design.jpg")
+}
+
+h2 {
+  color: #17A398;
+  text-align: left;
+}
+
+/* Header container */
+header div {
+  margin: 65px;
+}
+
+/* main container */
+main div {
+  margin: 65px 65px 85px 65px;
+}
+
+/* footer */
+footer div {
+margin-top: 100px 30px 30px 30px;
+}
+
+
+header > div > img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+li {
+  color: #662C91;
+}
+
+p {
+  font-size: 16px;
+  font-family: Georgia, serif;
+  color: #33312E;
+  text-align: center;
+}
+
+hr {
+  border: dashed;  
+}
+
+/* contact link */
+
+header > div > p > a {
+  font-family: Times, serif;
+  font-size: 16px;
+}
+
+a:link    { color: blue;  }
+a:visited { color: #EE6C4D;   }
+a:hover   { color: #17A398; }
+a:active  { color: pink;  }
+
+
+footer div a > img {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  padding: 34px 24px;
+}
