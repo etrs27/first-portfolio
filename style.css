@@ -1,9 +1,4 @@
-h1 {
-  color: #F38D68;
-  text-align: center;
-  height: 40px;
-  background-image: url("images/calculating-numbers-design.jpg")
-}
+
 
 h2 {
   color: #17A398;
@@ -24,43 +19,110 @@ hr {
 
 
 
+
 /* Header container */
 
-header div {
-  margin: 65px;
+header {
+    background-image: url("images/calculating-numbers-design.jpg");
+    /* Adds 40 pixels of space under the header
+       so the main content isn't so close
+       to the navigation */
+  margin-bottom: 50px;
 }
 
-header > div > img {
-  width: 200px;
-  height: 300px;
+header h1 {
+  color: #F38D68;
+  /* Centers the text */
+  text-align: center;
+  /* Removes the default margin/spacing around
+     the h1 element */
+  margin: 0;
+  /* Pushes the text down 20 pixels from
+     the top of the page */
+  padding-top: 20px;
+  font-size: 50px;
+}
+
+header nav {
+  /* The default is block and we change to flex */
+  display: flex;
+  /* Centers an element defined as `display: flex` */
+  justify-content: center;
+}
+
+header nav ul {
+  /* The default is block and we change to flex */
+  display: flex;
+  /* We want the nav to display in a single-row - this is 
+     the default for `display: flex` so we don't need to define its `flex-direction`, in this case */
+
+  /* This removes the default padding to the left of the
+     unordered list. */
+  padding-left: 0;
+  /* Removes the bullet points from the list items within the 
+     unordered list */
+  list-style: none;
+}
+
+header nav ul li a {
+  /* The link color is white */
+  color: #fff;
+  /* Removes the underline to the link */
+  text-decoration: none;
+  /* Applies 20 pixels of margin to the right of each link 
+     creating a visual gap between the navigation links */
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  /* Removes the margin to the right of the last anchor tag 
+     so that the nav appears centered. */
+  margin-right: 0;
+}
+
+
+/* Body */
+
+body img {
+  width: 65%;
   border-radius: 50%;
+  padding: 0 20px;
 }
 
-header > div > p > a {
-  font-family: Times, serif;
-  font-size: 16px;
-}
 
 
 /* main container */
 
 main div {
-  margin: 65px 65px 400px 65px;
+  margin: 200px 65px;
 }
+
+
 
 
 /* footer */
-
-footer div {
-margin: 30px;
+footer {
+padding: 50px 10px;
 }
 
-footer div a > img {
+
+footer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 34px 24px
+}
+
+
+/*
+footer div a img {
   height: 65px;
   width: 75px;
   border-radius: 50%;
   padding: 34px 24px;
-}
+} 
+*/
+
 
 
 /* paragraphs classes */
@@ -70,19 +132,95 @@ footer div a > img {
 }
 
 .p {
-  font-size: 16px;
+  font-size: 27px;
   font-family: Georgia, serif;
   color: #33312E;
 }
 
 
-/* contact link */
-
-
+/* contact link
 
 a:link    { color: blue;  }
 a:visited { color: #EE6C4D;   }
 a:hover   { color: #17A398; }
 a:active  { color: pink;  }
 
+*/
 
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+
+
+
+/* Desktop Version */
+
+@media all and (min-width: 800px) {
+  
+
+  .group {
+    flex-direction: row;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;  
+  }
+
+  header h1 {
+     /* Sets 14 pixels of margin above & below the h1 and set 
+        0 pixels to the left & right */
+    margin: 14px 0;
+    /* Remove or set 0 pixels of padding above the h1. */
+    padding-top: 0;
+  }
+
+  header nav {
+    /* Push down the navigation container 8 pixels to make it present a little better visually within the space. */
+    margin-top: 12px;
+    font-size: 30px;
+  }
+
+  
+  header nav ul li a:hover {
+    color: #42e012;
+  }
+
+
+  /* Main */
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;  
+  }
+
+
+
+  /* footer */
+  
+  footer {
+    display: flex;
+    padding: 40px;  
+  }
+
+
+}

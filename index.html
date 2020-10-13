@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Theodore</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link
@@ -18,79 +18,121 @@
 
   <body>
 
-<header>
-<!-- Introduction to my page -->
+    <header>
+      <div class="title"><h1>Theodore</h1></div>
+        <nav>
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+
+      
+        <div class="group">
+            <div class="item item-double">
+              <!-- profile picture -->
+              <img src="images/profile-photo.jpg" alt="Theodore">
+            </div>  
+
+            <div class="item">
+              <p class="p p-centered">
+                My name is <em>Theodore Stansbury</em>.
+                I am currently living in the DMV area, in the state of Maryland. I am a DevOps Engineer in training.
+              </p>
+
+              <p class="p">I always wanted to work with computers. I have a passion for coding and learning web development. I am also studying Cyber Security.
+              </p>
+
+                <br>
+
+              <p class="p p-centered">
+                You can <a href="#contact"><b>Contact Me</b></a> if you have any questions.
+              </p>
+            </div>
+        </div>
 
 
- <h1>Theodore</h1>
-
-<div>
- 
-  <h2>Intro</h2>
-
-<!-- profile picture -->
-  <img src="images/profile-photo.jpg" alt="Theodore">
-
-
-
-  <p class="p p-centered">My name is <em>Theodore Stansbury</em>.
-  I am currently living in the DMV area, in the state of Maryland. I am a DevOps Engineer in training.
-  </p>
-
-  <br>
-
-  <p class="p p-centered">You can <a href="#contact"><b>Contact Me</b></a> if you have any questions.
-  </p>
-</div>
-
-</header>
+<hr class="hr-style">
 
 
 <main>
 <!-- information about me -->
-<div>
-  <h2>About Me</h2>
-  <p class="p">I always wanted to work with computers. I have a passion for coding and learning web development. I am also studying Cyber Security.
-  </p>
+  <div class="group">
+    <div class="item">
+      <h2>Projects</h2>
+      <p>Here are some of my projects</p>
+      
+    </div>
 
 
-<!-- Interesting facts -->
-  <p class="p">Besides learning how to code, I have other interests:</p> 
-    <ul>
-      <li>Music - Different artist such as:
-        <ul>
-          <li>N.E.R.D</li>
-          <li>Rihanna</li>
-          <li>Jill Scott</li>
-        </ul>
-      </li>
-      <li>Video Games - Currently playing Zelda: Breath of the Wild</li>
-      <li>Art - Colored-Pencil books are relaxing.</li>
-      <li>Anime - Just started 'Attack on Titan.'</li>
-    </ul>
-</div>
+  <!-- Interesting facts -->
+  <div class="item">
+    <p id="aboutme" class="p">Besides learning how to code, I have other interests:</p> 
+      <ul>
+        <li>Music - Different artist such as:
+          <ul>
+            <li>N.E.R.D</li>
+            <li>Rihanna</li>
+            <li>Jill Scott</li>
+          </ul>
+        </li>
+        <li>Video Games - Currently playing Zelda: Breath of the Wild</li>
+        <li>Art - Colored-Pencil books are relaxing.</li>
+        <li>Anime - Just started 'Attack on Titan.'</li>
+      </ul>
+  </div>
 
 
 </main>
 
 <hr class="hr-style">
 
-<footer>
-<!-- How to contact me -->
+    <footer>
 
-  <div>
+    <!-- How to contact me -->
+      <div class="group">
+        
+        <h3 id="contact">Contact Me</h3>
+          <div class="item">
+            <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon">
+            </a>
+          </div>
 
-    <h3 id="contact">Contact Me</h3>
+          <div class="item">
+            <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon">
+            </a>
+          </div>
 
-    <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon">
-    </a>
+          <!-- Form -->
 
-    <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon">
-    </a>
+          <div class="item">
+            <form action="https://formspree.io/f/mleojbga" method="POST">
+              <label>
+                Your email:
+                <input type="text"  placeholder="Your email" name="_replyto" required>
+              </label>
+              <br>
+              <label>
+                Your message:
+                <textarea name="message" placeholder="Please enter a message"></textarea>
+              </label>
 
-  </div>
+              <!-- your other form fields go here -->
 
-</footer>
+              <button type="submit">Send</button>
+            </form>
+        
+
+          </div>
+      </div>
+
+      
+
+    </footer>
 
 
     <script src="script.js"></script>
