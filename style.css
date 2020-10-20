@@ -14,6 +14,9 @@ hr {
   border: dashed 2px;  
 }
 
+/* link settings */
+a:hover   { color: #18b812;}
+
 
 /* paragraphs classes */
 
