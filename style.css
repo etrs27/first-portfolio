@@ -17,11 +17,12 @@ hr {
 
 /* paragraphs classes */
 
-.p-centered {
+.p-left {
   text-align: left;
 }
 
 .p {
+  text-align: center;
   font-size: 20px;
   font-family: Georgia, serif;
   color: #33312E;
