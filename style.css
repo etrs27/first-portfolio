@@ -1,5 +1,5 @@
 
-.heads {
+.title-head {
   color: #662C91;
   text-align: left;
 }
@@ -12,6 +12,11 @@ li {
 
 hr {
   border: dashed 2px;  
+}
+
+.email-link {
+  font-size: 18px;
+  font-style: bold;
 }
 
 /* link settings */
@@ -32,7 +37,8 @@ a:hover   { color: #18b812;}
 }
 
 .p-projects {
-  font-size: 20px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -41,7 +47,6 @@ a:hover   { color: #18b812;}
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 .item {
@@ -107,13 +112,14 @@ header nav ul li:last-child a {
 }
 
 
-/* body */
+
 
 #profile {
+  display: block;
   width: 50%;
   border-radius: 50%;
-  margin-left: 20px;
-  justify-content: center
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #sec-img {
@@ -125,7 +131,7 @@ header nav ul li:last-child a {
 
 /* main container */
 
-main {
+.main-group-2 {
   background-color: #17A398;
 }
 
@@ -137,20 +143,9 @@ main {
 
 
 footer img {
-  height: 85px;
+  height: 80px;
   border-radius: 50%;
-  padding: 24px
 }
-
-
-/* contact link
-
-a:link    { color: blue;  }
-a:visited { color: #EE6C4D;   }
-a:hover   { color: #17A398; }
-a:active  { color: pink;  }
-
-*/
 
 
 
@@ -201,9 +196,15 @@ a:active  { color: pink;  }
 
   /* footer */
   
-  footer {
+  .footer-head {
     display: flex;
-    padding: 40px;  
+    justify-content: center;
+    padding: 0 30px;  
+  }
+
+  footer h2 {
+    margin: 14px 0;
+    padding-top: 0;
   }
 
 

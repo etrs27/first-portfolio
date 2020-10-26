@@ -31,8 +31,9 @@
     </header>
     
 
+    <main>
       
-        <div class="group">
+        <div class="main-group-1 group">
             <div class="item item-double">
               <!-- profile picture -->
               <img id="profile" src="images/profile-photo.jpg" alt="Theodore">
@@ -61,123 +62,136 @@
             </div>
         </div>
 
-<hr>
 
 
 
-  <main>
-  <!-- information about me -->
-    <div class="group">
+      <hr>
 
-      <div class="item">
-        <h2 class="heads">Skills</h2>
-          <ul>
-            <li><p>HTML</p></li>
-            <li><p>CSS</p></li>
-            <li><p>JavaScript</p></li>
-            <li><p>php</p></li>
-            <li><p>jQuery</p></li>
-            <li><p>React</p></li>
-            <li><p>Linux</p></li>
-          </ul>
-      </div>
 
-      <div class="item">
-        <h2 id="portfolio" class="heads">Projects</h2>
-        <p class="p">Here are some links to my projects:</p>
-          <a class="p" href="https://etrs27.github.io/first-portfolio/"><h4>Portfolio</h4></a>
-          <p class="p-project">In this project I used HTML and CSS to build a portfolio. I am using this project as a resume.
-            As new skills are learned and projects are made, I will add more to the website.
-          </p>
 
-      </div>
-      
-      <!-- Interesting facts -->
-      <div id="about" class="item">
-        <h2 class="heads">Interests</h2>
-          <p class="p p-left">Besides learning how to code, I have other interests:</p> 
-            <ul>
-              <li>Music - Different artist such as:
+  
+      <!-- information about me -->
+        <div class="main-group-2 group">
+
+          <div class="item" id="about">
+            <h2 class="title-head">Skills</h2>
+              <ul>
+                <li><p>HTML</p></li>
+                <li><p>CSS</p></li>
+                <li><p>JavaScript</p></li>
+                <li><p>php</p></li>
+                <li><p>jQuery</p></li>
+                <li><p>React</p></li>
+                <li><p>Linux</p></li>
+              </ul>
+          </div>
+
+          <div class="item">
+            <h2 id="portfolio" class="title-head">Projects</h2>
+              <h3>The Office Trivia Quiz</h3>
+                <p class="p-project">This is our Quiz App which is a triva challenge about NBC's The Office. 
+                  In this app, we utilized jQuery to traverse and manipulate the DOM.
+                </p>
+
+                <!-- Add links for repo and live -->
+
+
+
+                
+
+          </div>
+          
+          <!-- Interesting facts -->
+          <div class="item">
+            <h2 class="title-head">Interests</h2>
+              <p class="p p-left"><i>Besides learning how to code, I have other interests:</i></p>
+              <br> 
                 <ul>
-                  <li>N.E.R.D</li>
-                  <li>Rihanna</li>
-                  <li>Jill Scott</li>
+                  <li>Music - Different artist such as:
+                    <ul>
+                      <li>N.E.R.D</li>
+                      <li>Rihanna</li>
+                      <li>Jill Scott</li>
+                    </ul>
+                  </li>
+                  <li>Video Games - Currently playing Zelda: Breath of the Wild</li>
+                  <li>Art - Colored-Pencil books are relaxing.</li>
+                  <li>Anime - Just started 'Attack on Titan.'</li>
                 </ul>
-              </li>
-              <li>Video Games - Currently playing Zelda: Breath of the Wild</li>
-              <li>Art - Colored-Pencil books are relaxing.</li>
-              <li>Anime - Just started 'Attack on Titan.'</li>
-            </ul>
-      </div>
-    </div>
+          </div>
+        </div>
 
 
-  </main>
+    </main>
 
 
-<hr>
+      <hr>
 
 
     <footer>
 
     <!-- How to contact me -->
-      <div id="contact" class="group">
-        
-
-          <!-- Form -->
-
-          
-          <div class="item">
-            <h3 class="heads">Contact</h3>
-            <br>
-            <a href="mailto:tstansbu.27@gmail.com"?subject=MESSAGE Contact inquiry">Email Me</a> 
-            
-            <br>
-            <br>
-
-            <form action="https://formspree.io/f/mleojbga" method="POST">
-              <label>
-                Your email:
-                <input type="text"  placeholder="Your email" name="_replyto" required>
-              </label>
-              <br>
-              <label>
-                Your message:
-                <textarea name="message" placeholder="Email me or Type a message here."></textarea>
-              </label>
-              <br>
-
-              <button type="submit">Send</button>
-            </form>
-          </div>
-
-
-          <div class="item">
-            <figure>
-              <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon">
-              </a>
-              <figcaption>LinkedIn</figcaption>
-            </figure>
-          </div>
-
-
-          <div class="item">
-            <figure>
-              <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon">
-              </a>
-              <figcaption>Github</figcaption>
-            </figure>
-          </div>
-
-
-
+      <div class="footer-head">
+        <h2 class="title-head">Contact</h2>
       </div>
+      
+
+          <div id="contact" class="group">
+            
+              <div class="item">
+                
+                <a href="mailto:tstansbu.27@gmail.com" target="_blank" class="email-link">Email Me</a> 
+                
+                <br>
+                <br>
+              </div>
+
+              <div class="item">
+                <form action="https://formspree.io/f/mleojbga" method="POST">
+                  <label>
+                    Your email:
+                    <input type="text"  placeholder="Your email" name="_replyto" required>
+                  </label>
+                  <br>
+                  <label>
+                    Your message:
+                    <textarea name="message" placeholder="Email me or Type a message here." required></textarea>
+                  </label>
+                  <br>
+
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+
+
+              <div class="item">
+                <figure>
+                  <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon" class="linkedin-img">
+                  </a>
+                  
+                  <figcaption>LinkedIn</figcaption>
+                </figure>
+              
+                  <br>
+
+              
+                <figure>
+                  <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon" class="github-img">
+                  </a>
+                
+                  <figcaption>Github</figcaption>
+                </figure>
+              </div>
+
+
+
+          </div>
 
       
 
     </footer>
 
 
-    <script src="script.js"></script>
+    
   </body>
 </html>
