@@ -17,7 +17,9 @@ hr {
 
 /* link settings */
 
-a:hover   { color: #18b812;}
+a:hover {
+  color: #18b812;
+}
 
 .email-link {
   display: flex;
@@ -63,8 +65,9 @@ a:hover   { color: #18b812;}
 }
 
 .p-projects {
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
 
 
