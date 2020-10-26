@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- a webpage About Me -->
+<!-- A webpage About Me -->
+<!-- Theodore Stansbury -->
 
 <html lang="en">
   <head>
@@ -74,13 +75,13 @@
         <div class="main-group-2 group">
 
           <div class="item" id="about">
-            <h2 class="title-head">Skills</h2>
+            <h2 class="title-head">Skills && Services</h2>
               <ul>
                 <li><p>HTML</p></li>
                 <li><p>CSS</p></li>
                 <li><p>JavaScript</p></li>
-                <li><p>php</p></li>
                 <li><p>jQuery</p></li>
+                <li><p>php</p></li>
                 <li><p>React</p></li>
                 <li><p>Linux</p></li>
               </ul>
@@ -89,13 +90,21 @@
           <div class="item">
             <h2 id="portfolio" class="title-head">Projects</h2>
               <h3>The Office Trivia Quiz</h3>
-                <p class="p-project">This is our Quiz App which is a triva challenge about NBC's The Office. 
-                  In this app, we utilized jQuery to traverse and manipulate the DOM.
+                <p class="p-project">This App is a triva challenge about NBC's TV show, The Office. 
+                  This app utilizes HTML, CSS, JavaScript and jQuery to traverse and manipulate the DOM.
                 </p>
 
                 <!-- Add links for repo and live -->
+              <div class="project-button-group">
+                <button class="project-button" id="repo" type="button">
+                  <a href="https://github.com/etrs27/quiz-app" target="_blank">Repo</a>
+                </button>
 
 
+                <button class="project-button" id="live-link" type="button">
+                  <a href="https://etrs27.github.io/quiz-app/" target="_blank">Live</a>
+                </button>
+              </div>
 
                 
 
@@ -146,8 +155,10 @@
                 <br>
               </div>
 
-              <div class="item">
-                <form action="https://formspree.io/f/mleojbga" method="POST">
+              <div class="item message-me">
+
+                <label for="message-contact" class="message-label">Send a message:</label>
+                <form id="message-contact" action="https://formspree.io/f/mleojbga" method="POST">
                   <label>
                     Your email:
                     <input type="text"  placeholder="Your email" name="_replyto" required>
@@ -164,9 +175,12 @@
               </div>
 
 
-              <div class="item">
+              <br>
+              <br>
+
+              <div class="item footer-img">
                 <figure>
-                  <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon" class="linkedin-img">
+                  <a href="https://www.linkedin.com/in/theodorerstansbury/" target="_blank"><img src="images/linkedIn-icon.jpg" alt="LinkedIn icon">
                   </a>
                   
                   <figcaption>LinkedIn</figcaption>
@@ -176,7 +190,7 @@
 
               
                 <figure>
-                  <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon" class="github-img">
+                  <a href="https://github.com/etrs27" target="_blank"><img src="images/github-icon.png" alt="Github icon">
                   </a>
                 
                   <figcaption>Github</figcaption>
