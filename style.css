@@ -15,6 +15,10 @@ hr {
   border: dashed 2px;  
 }
 
+/* link settings */
+
+a:hover   { color: #18b812;}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -28,23 +32,21 @@ hr {
   justify-content: center;
 }
 
-.project-button {
-  padding: 15px 32px;
-  text-align: center;
+.project-link{
+  background-color: #33312E;
+  color: #F38D68;
+  padding: 1em 1.5em;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
+  text-transform: uppercase;
 }
 
-.project-button:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
+.project-link:hover {
+  background-color: #4CAF50;
+  color: white
 }
 
 
-/* link settings */
-a:hover   { color: #18b812;}
+
 
 
 /* paragraphs classes */
@@ -164,28 +166,22 @@ header nav ul li:last-child a {
 
 /* footer */
 
+label p {
+  font-size: 23px;
+}
+
 div.message-me
 {
   display: block;
   text-align: center;
 }
 
-.message-contact {
-  font-size: 23px;
-}
 
-.message-me
-{
-  display: inline-block;
+div.footer-img {
+  display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.footer-img {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
 }
 
 footer img {
