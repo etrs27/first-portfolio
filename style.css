@@ -166,7 +166,7 @@ header nav ul li:last-child a {
 
 /* footer */
 
-label p {
+label#message-contact {
   font-size: 23px;
 }
 
