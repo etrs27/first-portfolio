@@ -157,7 +157,7 @@
               <div class="item message-me">
 
 
-                <form action="https://formspree.io/f/mgepkgyz" method="POST" >
+                <!-- <form action="https://formspree.io/f/mgepkgyz" method="POST" >
                     <label>
                       Your email:
                       <input type="text" name="_next" required>
@@ -172,8 +172,28 @@
                     
                     <button type="submit">Send</button>
                     <input type="hidden" name="_next" value="https://etrs27.github.io/first-portfolio/"/>
-                </form>
+                </form> -->
 
+
+
+
+
+                <form id="contactform" method="POST">
+                  <input type="text" name="name" placeholder="Your name" required>
+                  <br>
+                  <input type="email" name="_replyto" placeholder="Your email" required>
+                  <input type="hidden" name="_subject" value="//etrs27.github.io/first-portfolio/" />
+                  <br>
+                  <textarea name="message" placeholder="Your message" required></textarea>
+                  <br>
+                  <input type="text" name="_gotcha" style="display:none" />
+                  <input type="submit" value="Send">
+              </form>
+
+              <script>
+                  const contactform =  document.getElementById('contactform');
+                  contactform.setAttribute('action', '//formspree.io/' + 'f/mgepkgyz');
+              </script>
 
 
               </div>
